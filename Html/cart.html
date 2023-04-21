@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="/JSA16/SPCK/Css/cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Thanh menu -->
+    <div class="thanhMenu">
+      <div class="menuContainer">
+        <div class="logo">
+          <a href="/JSA16/SPCK/Html/home.html">
+            <img src="/JSA16/SPCK/Main image/logo.jpg" class="anhLogo" alt="" />
+          </a>
+        </div>
+        <div class="option" id="option">
+          <ul>
+            <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+            <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+            <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+            <li><a href="#ct">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="container1">
+          <a href="/JSA16/SPCK/Html/cart.html" class="cart">
+            <img src="/JSA16/SPCK/Icon/cart.png" alt="" />
+            <span id="cartNum">Cart</span>
+          </a>
+          <div class="account">
+            <a href="" class="account">
+              <img src="/JSA16/SPCK/Icon/user.png" alt="" />
+              <span id="acc">My account</span>
+            </a>
+            <div class="recommend">
+              <div id="unsign">
+                <a href="/JSA16/SPCK/Html/login.html" class="signIn">
+                  <button class="sigBtn">Sign in</button>
+                </a>
+                <strong>Don't have an account?</strong>
+                <a href="/JSA16/SPCK/Html/register.html" class="register"
+                  ><i>click here</i></a
+                >
+                <a href="javascript:void(0);" class="logGg">
+                  <button class="ggBtn">Sign in with Google</button>
+                </a>
+                <a href="" class="forgot">
+                  <i>Forgot your password</i>
+                </a>
+                <div class="benefit">
+                  <strong>Benefits of Registration</strong>
+                  <ul>
+                    <li>Get discount from 3-10%</li>
+                    <li>Exclusive promotions &amp; offers</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="signed">
+                <button class="outBtn" onclick="signOut()">Sign out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="option" id="optionCopy">
+        <ul>
+          <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+          <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+          <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+          <li><a href="#ct">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Products -->
+    <div class="container2">
+      <div class="location">
+        <div class="locTitle">
+          <h1>Delivery address</h1>
+        </div>
+        <div class="locQuery">
+          <div class="q">
+            <div class="hvt">
+              <h3 class="qtit">Full name:</h3>
+              <input type="text" placeholder="Example: Ly Gia Bao" class="qi" />
+            </div>
+            <div class="sdt">
+              <h3 class="qtit">Phone number:</h3>
+              <input type="text" placeholder="Example: 0886750015" class="qi" />
+            </div>
+          </div>
+          <div class="q">
+            <div class="tp">
+              <h3 class="qtit">Province/City:</h3>
+              <input type="text" placeholder="Example: Ha Noi" class="qi" />
+            </div>
+            <div class="quan">
+              <h3 class="qtit">District:</h3>
+              <input type="text" placeholder="Example: Dong Da" class="qi" />
+            </div>
+            <div class="phuong">
+              <h3 class="qtit">Ward:</h3>
+              <input
+                type="text"
+                placeholder="Example: Quang Trung"
+                class="qi"
+              />
+            </div>
+          </div>
+          <div class="q">
+            <div class="cuthe">
+              <h3 class="qtit">Specific address:</h3>
+              <textarea
+                name=""
+                id="qcuthe"
+                cols="30"
+                rows="3"
+                placeholder="Example: So 3, ngo 21, Thai Ha"
+                class="qi"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="locCf">
+          <input type="checkbox" unchecked name="setDf" id="setDf" class="sd" />
+          <span class="sd"><i>Set as default address</i></span>
+          <br />
+          <button id="subBtn">Submit</button>
+        </div>
+      </div>
+      <div class="ct2Right">
+        <div id="product"></div>
+        <hr />
+        <div class="pay">
+          <div class="payLeft">
+            <p>Sub total:</p>
+            <p>Service fee:</p>
+            <p>Discount:</p>
+            <p>VAT:</p>
+          </div>
+          <div class="payRight">
+            <p><b id="subTot"></b><b> đ</b></p>
+            <p><b>-</b></p>
+            <p><b id="discount"></b><b> đ</b></p>
+            <p><b id="vat"></b><b> đ</b></p>
+          </div>
+        </div>
+        <hr id="hrt" />
+        <div class="total">
+          <div class="totLeft">
+            <p><b>Total:</b></p>
+          </div>
+          <div class="totRight">
+            <p><b id="total"></b><b> đ</b></p>
+          </div>
+        </div>
+        <button id="buyBtn">Order</button>
+      </div>
+    </div>
+    <!-- Liên hệ -->
+    <div class="contacts" id="ct">
+      <div class="lienhe">
+        <h2>
+          <i><b>CONTACTS</b></i>
+        </h2>
+        <div class="lhContainer">
+          <div class="info">
+            Me:
+            <br />
+            Address:
+            <br />
+            Phone:
+            <br />
+            Email:
+          </div>
+          <div class="info">
+            Someone you known
+            <br />
+            My Heart
+            <br />
+            0886750015
+            <br />
+            wowomenday@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="follow">
+        <h2>
+          <i><b>FOLLOW US ON</b></i>
+        </h2>
+        <div class="info2">
+          <a href="https://www.facebook.com/Internationalwomensday"
+            ><img src="/JSA16/SPCK/Icon/fb.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/Internationalwomensday"
+            >https://facebook.com/Internationalwomensday
+          </a>
+        </div>
+        <div class="info2">
+          <a href="https://twitter.com/womensday"
+            ><img src="/JSA16/SPCK/Icon/tw.png" alt="" />
+          </a>
+          <a href="https://twitter.com/womensday"
+            >https://twitter.com/womensday
+          </a>
+        </div>
+        <div class="info2">
+          <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
+            ><img src="/JSA16/SPCK/Icon/yt.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
+            >https://youtube.com/@InternationalWomensDay-IWD
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Up to top -->
+    <div id="scroll"></div>
+    <div class="up">
+      <a href="#scroll"><img id="up" src="/JSA16/SPCK/Icon/up.png" alt="" /></a>
+    </div>
+
+    <script src="/JSA16/SPCK/Js/cart.js"></script>
+  </body>
+</html>

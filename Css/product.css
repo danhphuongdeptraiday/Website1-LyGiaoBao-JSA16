@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f6f6;
+  font-family: "Monotype Corsiva", "Apple Chancery", "ITC Zapf Chancery",
+    "URW Chancery L", cursive;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*  */
+/* Thanh menu */
+/*  */
+/* Code chung */
+.thanhMenu {
+  width: 100%;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: #f6f6f6;
+}
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #bd2026;
+}
+/* Logo */
+.logo {
+  width: 20%;
+}
+.anhLogo {
+  height: 95px;
+  width: 100%;
+  object-fit: cover;
+}
+/* Các mục */
+.option {
+  width: 50%;
+  font-size: 28px;
+}
+#optionCopy {
+  display: none;
+}
+.option ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 95px;
+}
+.option li {
+  width: 25%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Cart & login */
+.container1 {
+  width: 25%;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cart,
+.account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Dropdown */
+.recommend {
+  width: 280px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 999;
+  position: absolute;
+  top: 100px;
+  right: 4.9%;
+  box-shadow: none;
+  background-color: #fff;
+  display: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  user-select: none;
+}
+.account:hover .recommend {
+  display: block;
+}
+#unsign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#signed {
+  display: none;
+}
+.signIn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sigBtn,
+.outBtn {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.register {
+  color: #bd2026;
+  font-weight: 500;
+}
+.logGg {
+  width: 100%;
+  margin: 10px 0;
+}
+.ggBtn {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #dedede;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+}
+.benefit {
+  width: 100%;
+  border: 2px solid #9a9a9a;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Monotype Corsiva", "Apple Chancery", "ITC Zapf Chancery",
+    "URW Chancery L", cursive;
+}
+.benefit strong {
+  font-size: 22px;
+}
+.benefit ul li {
+  font-size: 18px;
+  margin-left: 17px;
+}
+/*  */
+/* Product */
+/*  */
+.container2 {
+  margin: 105px 5% 5px 5%;
+  width: 90%;
+  height: 520px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.575);
+  display: flex;
+  flex-direction: row;
+}
+.proInfo {
+  width: 650px;
+  margin: 90px 0 0 10px;
+}
+svg {
+  width: 20px;
+}
+.rate {
+  margin: 50px 0 20px 0;
+}
+.copy {
+  display: none;
+}
+#proPrice {
+  margin: 10px 0;
+}
+#proName {
+  font-family: "Lobster";
+}
+.proPic {
+  width: 520px;
+  height: 505px;
+  padding: 13px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pic {
+  height: 100%;
+}
+.amount a.minus {
+  background: transparent url(/JSA16/SPCK/Icon/minus.png) no-repeat center
+    center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.amount a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e1e1e1;
+  background: transparent url(/JSA16/SPCK/Icon/plus.png) no-repeat center center;
+  float: left;
+  border-radius: 0.2rem;
+}
+.amount input {
+  border: 1px solid #e1e1e1;
+  margin-left: -1px;
+  float: left;
+  padding: 7.5px 8px;
+  height: 50px;
+  width: 70px;
+  user-select: none;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Monotype Corsiva", "Apple Chancery", "ITC Zapf Chancery",
+    "URW Chancery L", cursive;
+}
+.nut {
+  clear: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#addBtn {
+  margin-top: 35px;
+  width: 45%;
+  padding: 7px 0;
+  font-size: 20px;
+  background: #f6f6f6;
+  border: 3px solid #ff9800;
+  color: #ff9800;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#buyBtn {
+  margin-top: 35px;
+  width: 45%;
+  padding: 10px 0;
+  font-size: 20px;
+  background: #e32d2d;
+  color: #f6f6f6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*  */
+/* Liên hệ */
+/*  */
+.contacts {
+  background-image: url(/JSA16/SPCK/bgct.png);
+  padding: 10px 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.lienhe,
+.follow {
+  margin: 20px 0;
+}
+.lhContainer {
+  display: flex;
+}
+.info {
+  display: inline-block;
+  font-size: 24px;
+}
+.info2 {
+  display: flex;
+  align-items: center;
+}
+.info2 a {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.info2 a img {
+  width: 40px;
+}
+/*  */
+/* Up to top */
+/*  */
+#scroll {
+  position: absolute;
+  top: 0;
+}
+.up {
+  position: fixed;
+  bottom: 50px;
+  right: 5px;
+  width: 60px;
+}
+#up {
+  width: 100%;
+}
+
+/*  */
+/* Responsive */
+/*  */
+@media only screen and (max-width: 820px) {
+  .container2 {
+    flex-direction: column;
+    height: auto;
+    padding: 17px 5%;
+  }
+  .ori {
+    display: none;
+  }
+  .copy {
+    display: block;
+  }
+  .proPic {
+    width: 100%;
+    height: auto;
+  }
+  #pic {
+    height: auto;
+    width: 85%;
+  }
+  .proInfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .rate {
+    margin: 10px 0;
+  }
+  #buyBtn,
+  #addBtn {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* thanh menu */
+  #option {
+    display: none;
+  }
+  #optionCopy {
+    display: flex;
+    width: 100%;
+  }
+  #optionCopy ul li {
+    height: 55px;
+  }
+  #optionCopy ul {
+    height: 55px;
+  }
+  .anhLogo {
+    height: 75px;
+  }
+  .logo {
+    width: 45%;
+  }
+  .container1 {
+    width: 50%;
+    height: 75px;
+  }
+  .thanhMenu {
+    flex-direction: column;
+  }
+  /* ndung */
+  .container2 {
+    margin-top: 155px;
+  }
+  #pic {
+    height: auto;
+    width: 100%;
+  }
+  /* Up to top */
+  .up {
+    bottom: 20px;
+    right: 5px;
+    width: 50px;
+  }
+}

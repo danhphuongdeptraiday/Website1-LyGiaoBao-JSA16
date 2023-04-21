@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>International Women's Day</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/JSA16/SPCK/Css/shop.css" />
+  </head>
+  <body>
+    <!-- Thanh menu -->
+    <div class="thanhMenu">
+      <div class="menuContainer">
+        <div class="logo">
+          <a href="/JSA16/SPCK/Html/home.html">
+            <img src="/JSA16/SPCK/Main image/logo.jpg" class="anhLogo" alt="" />
+          </a>
+        </div>
+        <div class="option" id="option">
+          <ul>
+            <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+            <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+            <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+            <li><a href="#ct">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="container1">
+          <a href="/JSA16/SPCK/Html/cart.html" class="cart">
+            <img src="/JSA16/SPCK/Icon/cart.png" alt="" />
+            <span id="cartNum">Cart</span>
+          </a>
+          <div class="account">
+            <a href="" class="account">
+              <img src="/JSA16/SPCK/Icon/user.png" alt="" />
+              <span id="acc">My account</span>
+            </a>
+            <div class="recommend">
+              <div id="unsign">
+                <a href="/JSA16/SPCK/Html/login.html" class="signIn">
+                  <button class="sigBtn">Sign in</button>
+                </a>
+                <strong>Don't have an account?</strong>
+                <a href="/JSA16/SPCK/Html/register.html" class="register"
+                  ><i>click here</i></a
+                >
+                <a href="javascript:void(0);" class="logGg">
+                  <button class="ggBtn">Sign in with Google</button>
+                </a>
+                <a href="" class="forgot">
+                  <i>Forgot your password</i>
+                </a>
+                <div class="benefit">
+                  <strong>Benefits of Registration</strong>
+                  <ul>
+                    <li>Get discount from 3-10%</li>
+                    <li>Exclusive promotions &amp; offers</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="signed">
+                <button class="outBtn" onclick="signOut()">Sign out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="option" id="optionCopy">
+        <ul>
+          <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+          <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+          <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+          <li><a href="#ct">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Wang gao -->
+    <div class="wangGao">
+      <div class="slideContainer">
+        <div class="slides fade">
+          <div class="anhSo">1 / 3</div>
+          <img id="slide1" src="/JSA16/SPCK/Main image/p1.jpg" class="anh" />
+        </div>
+
+        <div class="slides fade">
+          <div class="anhSo">2 / 3</div>
+          <img id="slide2" src="/JSA16/SPCK/Main image/p2.jpg" class="anh" />
+        </div>
+
+        <div class="slides fade">
+          <div class="anhSo">3 / 3</div>
+          <img id="slide3" src="/JSA16/SPCK/Main image/p3.jpg" class="anh" />
+        </div>
+
+        <a class="prev" onclick="pushSlides(-1)">❮</a>
+        <a class="next" onclick="pushSlides(1)">❯</a>
+      </div>
+      <div class="dotContainer">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <!-- Sản phẩm -->
+    <div class="container2">
+      <!-- Hot -->
+      <div class="type">
+        <h1>DEAL OF THE WEEK</h1>
+        <div class="deal">
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d1.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Pro longwear paint pot</b></a
+            >
+            <span class="price"
+              ><del>560.000</del> <b class="cost">336.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d2.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>217 Synthetic blending brush</b></a
+            >
+            <span class="price"
+              ><del>675.000</del> <b class="cost">405.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d3.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Eye brows big boost fibre gel</b></a
+            >
+            <span class="price"
+              ><del>540.000</del> <b class="cost">324.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d4.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>My Babe</b></a
+            >
+            <span class="price"
+              ><del>550.000</del> <b class="cost">330.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d5.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Sau tất cả</b></a
+            >
+            <span class="price"
+              ><del>1.200.000</del> <b class="cost">720.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d6.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Baby flower</b></a
+            >
+            <span class="price"
+              ><del>360.000</del> <b class="cost">216.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d7.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Thỏ cô đơn</b></a
+            >
+            <span class="price"
+              ><del>200.000</del> <b class="cost">120.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d8.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Teddy thân thiện</b></a
+            >
+            <span class="price"
+              ><del>300.000</del> <b class="cost">180.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d9.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Gấu lười</b></a
+            >
+            <span class="price"
+              ><del>400.000</del> <b class="cost">240.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/d10.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Thỏ nơ lông xù</b></a
+            >
+            <span class="price"
+              ><del>200.000</del> <b class="cost">120.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+        </div>
+      </div>
+      <!-- Hoa -->
+      <div class="type">
+        <h1>FLOWERS</h1>
+        <div class="flower">
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f1.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>For my dear</b></a
+            >
+            <span class="price"
+              ><del>280.000</del> <b class="cost">168.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f2.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Girlfriend</b></a
+            >
+            <span class="price"
+              ><del>350.000</del> <b class="cost">210.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f3.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Ngày mộng mơ</b></a
+            >
+            <span class="price"
+              ><del>500.000</del> <b class="cost">300.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f4.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>My Babe</b></a
+            >
+            <span class="price"
+              ><del>550.000</del> <b class="cost">330.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f5.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Sau tất cả</b></a
+            >
+            <span class="price"
+              ><del>1.200.000</del> <b class="cost">720.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f6.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Baby flower</b></a
+            >
+            <span class="price"
+              ><del>360.000</del> <b class="cost">216.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f7.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>My Tana</b></a
+            >
+            <span class="price"
+              ><del>570.000</del> <b class="cost">342.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f8.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Red chilli Rose</b></a
+            >
+            <span class="price"
+              ><del>600.000</del> <b class="cost">360.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f9.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Romance 3</b></a
+            >
+            <span class="price"
+              ><del>800.000</del> <b class="cost">480.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/f10.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Your Day</b></a
+            >
+            <span class="price"
+              ><del>1.000.000</del> <b class="cost">600.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+        </div>
+      </div>
+      <!-- Gấu -->
+      <div class="type">
+        <h1>TEDDY</h1>
+        <div class="teddy">
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t1.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>White teddy áo đỏ</b></a
+            >
+            <span class="price"
+              ><del>150.000</del> <b class="cost">90.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t2.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Thỏ nơ lông xù</b></a
+            >
+            <span class="price"
+              ><del>200.000</del> <b class="cost">120.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t3.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Teddy Cá Tính</b></a
+            >
+            <span class="price"
+              ><del>275.000</del> <b class="cost">165.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t4.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Thỏ cô đơn</b></a
+            >
+            <span class="price"
+              ><del>200.000</del> <b class="cost">120.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t5.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Teddy thân thiện</b></a
+            >
+            <span class="price"
+              ><del>300.000</del> <b class="cost">180.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t6.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Gấu lười</b></a
+            >
+            <span class="price"
+              ><del>400.000</del> <b class="cost">240.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t7.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Gấu Dano đứng</b></a
+            >
+            <span class="price"
+              ><del>500.000</del> <b class="cost">300.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t8.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Gấu ngực tim hồng</b></a
+            >
+            <span class="price"
+              ><del>350.000</del> <b class="cost">210.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t9.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Búp bê tóc xoăn đầm đo</b>
+            </a>
+            <span class="price"
+              ><del>650.000</del> <b class="cost">390.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/t10.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Gấu áo tim xanh</b></a
+            >
+            <span class="price"
+              ><del>750.000</del> <b class="cost">450.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+        </div>
+      </div>
+      <!-- Mỹ phẩm -->
+      <div class="type">
+        <h1>COSMETICS</h1>
+        <div class="cosmetic">
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c1.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <!-- Eye shadow  -->
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>ROYAL RENDEZVOUS</b></a
+            >
+            <span class="price"
+              ><del>470.000</del> <b class="cost">280.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c2.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>MEMORIES OF SPACE</b></a
+            >
+            <span class="price"
+              ><del>470.000</del> <b class="cost">280.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c3.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>MINT CONDITION</b></a
+            >
+            <span class="price"
+              ><del>470.000</del> <b class="cost">280.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c4.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Pro longwear paint pot</b></a
+            >
+            <span class="price"
+              ><del>560.000</del> <b class="cost">336.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c5.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>217 Synthetic blending brush</b></a
+            >
+            <span class="price"
+              ><del>675.000</del> <b class="cost">405.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c6.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Eye brows big boost fibre gel</b>
+            </a>
+            <span class="price"
+              ><del>540.000</del> <b class="cost">324.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c7.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Extended play gigablack lash mascara</b></a
+            >
+            <span class="price"
+              ><del>585.000</del> <b class="cost">350.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c8.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Brushstroke 24-hour liner</b></a
+            >
+            <span class="price"
+              ><del>520.000</del> <b class="cost">310.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c9.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>209 Synthetic eye liner brush</b></a
+            >
+            <span class="price"
+              ><del>520.000</del> <b class="cost">310.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+          <!-- Sp -->
+          <div class="product">
+            <a class="picLink" href="/JSA16/SPCK/Html/product.html">
+              <div class="picContainer">
+                <img src="/JSA16/SPCK/Products/c10.png" alt="" class="pic" />
+              </div>
+            </a>
+            <hr />
+            <a href="/JSA16/SPCK/Html/product.html" class="proName"
+              ><b>Technakohl liner</b></a
+            >
+            <span class="price"
+              ><del>520.000</del> <b class="cost">310.000</b> <b>đ</b></span
+            >
+            <button class="addBtn"><b>Add to cart</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Liên hệ -->
+    <div class="contacts" id="ct">
+      <div class="lienhe">
+        <h2>
+          <i><b>CONTACTS</b></i>
+        </h2>
+        <div class="lhContainer">
+          <div class="info">
+            Me:
+            <br />
+            Address:
+            <br />
+            Phone:
+            <br />
+            Email:
+          </div>
+          <div class="info">
+            Someone you known
+            <br />
+            My Heart
+            <br />
+            0886750015
+            <br />
+            wowomenday@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="follow">
+        <h2>
+          <i><b>FOLLOW US ON</b></i>
+        </h2>
+        <div class="info2">
+          <a href="https://www.facebook.com/Internationalwomensday"
+            ><img src="/JSA16/SPCK/Icon/fb.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/Internationalwomensday"
+            >https://facebook.com/Internationalwomensday
+          </a>
+        </div>
+        <div class="info2">
+          <a href="https://twitter.com/womensday"
+            ><img src="/JSA16/SPCK/Icon/tw.png" alt="" />
+          </a>
+          <a href="https://twitter.com/womensday"
+            >https://twitter.com/womensday
+          </a>
+        </div>
+        <div class="info2">
+          <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
+            ><img src="/JSA16/SPCK/Icon/yt.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
+            >https://youtube.com/@InternationalWomensDay-IWD
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Up to top -->
+    <div id="scroll"></div>
+    <div class="up">
+      <a href="#scroll"><img id="up" src="/JSA16/SPCK/Icon/up.png" alt="" /></a>
+    </div>
+
+    <script src="/JSA16/SPCK/Js/shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/JSA16/SPCK/Css/product.css" />
+  </head>
+  <body>
+    <!-- Thanh menu -->
+    <div class="thanhMenu">
+      <div class="menuContainer">
+        <div class="logo">
+          <a href="/JSA16/SPCK/Html/home.html">
+            <img src="/JSA16/SPCK/Main image/logo.jpg" class="anhLogo" alt="" />
+          </a>
+        </div>
+        <div class="option" id="option">
+          <ul>
+            <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+            <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+            <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+            <li><a href="#ct">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="container1">
+          <a href="/JSA16/SPCK/Html/cart.html" class="cart">
+            <img src="/JSA16/SPCK/Icon/cart.png" alt="" />
+            <span id="cartNum">Cart</span>
+          </a>
+          <div class="account">
+            <a href="" class="account">
+              <img src="/JSA16/SPCK/Icon/user.png" alt="" />
+              <span id="acc">My account</span>
+            </a>
+            <div class="recommend">
+              <div id="unsign">
+                <a href="/JSA16/SPCK/Html/login.html" class="signIn">
+                  <button class="sigBtn">Sign in</button>
+                </a>
+                <strong>Don't have an account?</strong>
+                <a href="/JSA16/SPCK/Html/register.html" class="register"
+                  ><i>click here</i></a
+                >
+                <a href="javascript:void(0);" class="logGg">
+                  <button class="ggBtn">Sign in with Google</button>
+                </a>
+                <a href="" class="forgot">
+                  <i>Forgot your password</i>
+                </a>
+                <div class="benefit">
+                  <strong>Benefits of Registration</strong>
+                  <ul>
+                    <li>Get discount from 3-10%</li>
+                    <li>Exclusive promotions &amp; offers</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="signed">
+                <button class="outBtn" onclick="signOut()">Sign out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="option" id="optionCopy">
+        <ul>
+          <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+          <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+          <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+          <li><a href="#ct">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Product -->
+    <div class="container2">
+      <div class="copy">
+        <h1 id="proNameCopy"></h1>
+        <h2 id="proPriceCopy"></h2>
+      </div>
+      <div class="proPic">
+        <img src="" alt="" id="pic" />
+      </div>
+      <div class="proInfo">
+        <div class="ori">
+          <h1 id="proName"></h1>
+          <h2 id="proPrice"></h2>
+        </div>
+        <div class="rate">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+            />
+          </svg>
+          <h2>Rating: 10/5 | ?.000.000.000 sold</h2>
+        </div>
+        <h2>Amount:</h2>
+        <div class="amount">
+          <a href="javascript:void(0);" class="minus" onclick="bot()"></a>
+          <input class="num" id="amount" type="text" value="1" />
+          <a href="javascript:void(0);" class="plus" onclick="them()"></a>
+        </div>
+        <div class="nut">
+          <button id="addBtn">Add to cart</button>
+          <button id="buyBtn">Buy now</button>
+        </div>
+      </div>
+    </div>
+    <!-- Liên hệ -->
+    <div class="contacts" id="ct">
+      <div class="lienhe">
+        <h2>
+          <i><b>CONTACTS</b></i>
+        </h2>
+        <div class="lhContainer">
+          <div class="info">
+            Me:
+            <br />
+            Address:
+            <br />
+            Phone:
+            <br />
+            Email:
+          </div>
+          <div class="info">
+            Someone you known
+            <br />
+            My Heart
+            <br />
+            0886750015
+            <br />
+            wowomenday@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="follow">
+        <h2>
+          <i><b>FOLLOW US ON</b></i>
+        </h2>
+        <div class="info2">
+          <a href="https://www.facebook.com/Internationalwomensday"
+            ><img src="/JSA16/SPCK/Icon/fb.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/Internationalwomensday"
+            >https://facebook.com/Internationalwomensday
+          </a>
+        </div>
+        <div class="info2">
+          <a href="https://twitter.com/womensday"
+            ><img src="/JSA16/SPCK/Icon/tw.png" alt="" />
+          </a>
+          <a href="https://twitter.com/womensday"
+            >https://twitter.com/womensday
+          </a>
+        </div>
+        <div class="info2">
+          <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
+            ><img src="/JSA16/SPCK/Icon/yt.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
+            >https://youtube.com/@InternationalWomensDay-IWD
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Up to top -->
+    <div id="scroll"></div>
+    <div class="up">
+      <a href="#scroll"><img id="up" src="up.png" alt="" /></a>
+    </div>
+
+    <script src="/JSA16/SPCK/Js/product.js"></script>
+  </body>
+</html>
